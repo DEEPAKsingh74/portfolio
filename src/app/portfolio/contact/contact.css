@@ -1,0 +1,11 @@
+input, select, textarea{
+	padding: 6px 8px;
+	border-radius: 10px;
+	outline: none;
+	color: rgb(14, 152, 152);
+	font-weight: bold;
+}
+label{
+	font-weight: bold;
+	color: rgb(39, 39, 39);
+}

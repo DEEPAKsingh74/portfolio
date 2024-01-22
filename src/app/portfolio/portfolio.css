@@ -1,0 +1,76 @@
+.menu-list > li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.6s linear;
+	border-radius: 20px;
+	padding: 4px 17px;
+	cursor: pointer;
+}
+
+.menu-list > li:hover{
+	background-color: #5f9ea0;
+	color: white;
+	font-weight: 800;
+}
+
+.active{
+	background-color: cadetblue;
+	color: white;
+	font-weight: 800;
+}
+
+.dynamic-text{
+	color: #5f9ea0;
+	animation: skillDisplay 3s linear 0s infinite alternate-reverse;
+}
+
+@keyframes skillDisplay {
+	0%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0.7;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+
+.download-button{
+	position: relative;
+}
+.download-anim{
+	transition: all 0.8s linear;
+	z-index: 0;
+}
+
+.download-common{
+	z-index: 2;
+	color: rgb(50, 50, 50);
+}
+.download-button:hover .download-anim{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #5f9ea0;
+	height: 100%;
+	animation: downloadButton 3s linear 0s 1 alternate forwards;
+}
+
+@keyframes downloadButton {
+	0%{
+		width: 0%;
+		opacity: 0.1;
+	}
+	50%{
+		width: 50%;
+		opacity: 0.6;
+	}
+	100%{
+		width: 100%;
+		opacity: 0.8;
+	}
+}
