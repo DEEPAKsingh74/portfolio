@@ -1,6 +1,8 @@
 const SkillDisplay = [
 	"Developer",
-	"Software",
+	"Programmer",
+	"Engineer",
+	"Designer"
 ]
 
 export default SkillDisplay;

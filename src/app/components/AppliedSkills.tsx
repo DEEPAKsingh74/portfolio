@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SkillCard from "./SkillCard"
 
 export const fetchProjects = async () => {
@@ -20,7 +21,7 @@ const AppliedSkills = async () => {
 	const projects = await fetchProjects();
 
 	return (
-		<div className="flex flex-wrap gap-4">
+		<Link href="https://github.com/DEEPAKsingh74?tab=repositories" className="flex flex-wrap gap-4">
 			{
 				projects.map((item: any, index: number) => (
 					<SkillCard item={item}/>
@@ -28,7 +29,7 @@ const AppliedSkills = async () => {
 			}
 
 			<br /><br />
-		</div>
+		</Link>
 	)
 }
 

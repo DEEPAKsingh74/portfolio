@@ -23,7 +23,7 @@ const About = async () => {
           className="w-[100%] h-[100%]" />
       </div>
 
-      <div className="w-[50%] h-[60%] bg-[#38a7ba] text-slate-100 px-4 py-4 rounded-3xl relative right-[7rem] top-8 shadow-xl">
+      <div className="w-[50%] h-[60%] bg-[#38a7ba] text-slate-100 text-xl px-4 py-4 rounded-3xl relative right-[7rem] top-8 shadow-xl">
         {
           about.map((item: any, index: number) => {
             return (

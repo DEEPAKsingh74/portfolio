@@ -1,4 +1,5 @@
 import Accordian from "@/app/components/Accordian"
+import DisplayCertificates from "@/app/components/DisplayCertificates"
 
 const Education = () => {
   return (
@@ -11,6 +12,7 @@ const Education = () => {
 
       <h1 className='text-4xl font-bold ms-8 my-4 text-[#363636]'>Certificates</h1>
 
+      <DisplayCertificates />
       <br />
     </div>
   )
