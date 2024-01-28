@@ -32,7 +32,7 @@ const Portfolio = () => {
 					<div className="download-anim rounded-3xl">
 					</div>
 					<span className="download-common"><FaFileDownload /></span>
-					<Link href="http://localhost:3001/assets/resume/deepak_resume.pdf" className="font-semibold download-common" download target="_blank">Download My Resume</Link>
+					<Link href={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/resume/deepak_resume.pdf`} className="font-semibold download-common" download target="_blank">Download My Resume</Link>
 				</button>
 			</div>
 

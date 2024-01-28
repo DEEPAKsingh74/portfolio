@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard"
 
 export const fetchProjects = async () => {
 	try {
-		const data = await fetch("http://localhost:3001/api/projects", {
+		const data = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/projects`, {
 			cache: "force-cache"
 		});
 

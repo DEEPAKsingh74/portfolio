@@ -13,7 +13,7 @@ const Accordian = () => {
 	useEffect(() => {
 		setStatus('loading');
 		const fetchEducation = () => {
-			fetch("http://localhost:3001/api/education")
+			fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/education`)
 				.then((response) => {
 					if (!response.ok) {
 						throw new Error("Error fetching.");

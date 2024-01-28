@@ -6,7 +6,7 @@ const SkillCard = ({ item }: { item: any }) => {
 		<div className="w-[30rem] h-[10rem] flex mx-4 rounded-lg shadow-xl border-2 border-slate-100 cursor-pointer">
 			<div className="w-[25%] h-full flex justify-center items-center border-r-2">
 				<Image
-					src={`http://localhost:3001/assets/images/${item.project_skill[0].skills.image}`}
+					src={`${process.env.NEXT_PUBLIC_BASE_URL}/assets/images/${item.project_skill[0].skills.image}`}
 					alt="image"
 					width={200}
 					height={200}

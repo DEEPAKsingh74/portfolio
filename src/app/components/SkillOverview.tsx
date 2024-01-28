@@ -4,7 +4,7 @@ import SkillShort from "./SkillShort"
 
 export const skillOverview = async () => {
 	try {
-		const data = await fetch("http://localhost:3001/api/skills", {
+		const data = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/skills`, {
 			cache: "force-cache"
 		});
 		const skillData = await data.json();

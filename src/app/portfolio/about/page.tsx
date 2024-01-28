@@ -2,7 +2,7 @@ import Image from "next/image"
 import profile from "../../../../public/images/profile.png"
 
 export const getAbout = async () =>{
-  const data = await fetch("http://localhost:3001/api/about", {
+  const data = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/about`, {
     cache: "force-cache"
   });
 
