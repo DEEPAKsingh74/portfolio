@@ -1,0 +1,21 @@
+.pieHollow {
+	position: relative;
+	width: 8em;
+	height: 8em;
+	margin: 2rem 0rem;
+	border-radius: 50%;
+	background: conic-gradient(#ffdb70 0deg 298.8deg,
+			white 298.8deg 360deg);
+}
+
+.pieHollow::after {
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	height: 70%;
+	background-color: #1e1e1ffc;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}

@@ -1,0 +1,34 @@
+.jobroleContainer {
+	gap: 7px;
+}
+
+
+.jobroleContainer > span {
+	background-color: hsl(240, 1%, 17%);
+	color: hsl(0, 0%, 100%);
+	padding: 10px 1rem;
+	font-weight: 200;
+	border-radius: 0.5rem;
+}
+
+.hrbar {
+	background: linear-gradient(to right, #686868, black, #686868);
+}
+
+
+.profileContainer {
+	background-color: linear-gradient(to bottom right,
+			hsl(240, 1%, 25%) 3%,
+			hsl(0, 0%, 19%) 97%);
+}
+
+.profileImage {
+	filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+	transform: translateX(10px) rotateY(0deg) rotateX(0deg);
+	transition: transform 0.3s ease;
+
+}
+
+.profileImage:hover {
+	transform: rotateY(0deg) rotateX(0deg) scale(1.06);
+}

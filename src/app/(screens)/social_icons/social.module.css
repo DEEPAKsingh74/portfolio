@@ -1,0 +1,48 @@
+.naviContainer {
+	transition: transform 0.3s;
+	position: relative;
+}
+
+.naviContainer::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 50%;
+	transform: translate(-100%, -50%);
+	left: -100%;
+	width: fit-content;
+	height: fit-content;
+	padding: 0.3rem 0.6rem;
+	background-color: white;
+	color: black;
+	font-size: 12px;
+	font-weight: 600;
+	border-radius: 0.3rem;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.naviContainer::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -100%;
+	transform: translate(-10%, -50%);
+	outline: none;
+	width: 0;
+	height: 0;
+	border-width: 10px;
+	border-style: solid;
+	border-color: transparent  transparent transparent white;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.naviContainer:hover::before, .naviContainer:hover::after{
+	opacity: 1;
+	transition: opacity 0.7s;
+}
+
+.naviContainer:hover {
+	transform: scale(1.1);
+	transform: translateX(-10px);
+}
